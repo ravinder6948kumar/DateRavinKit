@@ -84,6 +84,23 @@ struct DateRavinKitTests {
             )
         }
     }
+    
+    
+    @Test("Server date with milliseconds")
+
+    func serverDateWithMilliseconds() throws {
+
+        let result = try DateRavinKit.convert(
+
+            "2022-08-22 17:15:45.000",
+
+            to: "dd MMM yyyy"
+
+        )
+
+        #expect(result == "22 Aug 2022")
+
+    }
 }
 
 
