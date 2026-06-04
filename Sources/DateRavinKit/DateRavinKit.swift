@@ -7,24 +7,25 @@ public final class DateRavinKit {
 
     public static func convert(
         _ input: String,
-        to outputFormat: DateFormat
-    ) -> String? {
+        to outputFormat: String
+    ) throws -> String {
 
-        guard let date =
-            DateParser.parse(input)
-        else {
-            return nil
+        guard let date = DateParser.parse(input) else {
+            throw DateRavinKitError.invalidInputDate
         }
 
-        let formatter =
-            FormatterFactory.shared
-                .formatter(
-                    format:
-                    outputFormat.rawValue
-                )
+        // Validate format
+        let formatter = FormatterFactory.shared
+            .formatter(format: outputFormat)
 
-        return formatter.string(
-            from: date
-        )
+        formatter.dateFormat = outputFormat
+
+        let result = formatter.string(from: date)
+
+        if result.isEmpty {
+            throw DateRavinKitError.invalidOutputFormat
+        }
+
+        return result
     }
 }
