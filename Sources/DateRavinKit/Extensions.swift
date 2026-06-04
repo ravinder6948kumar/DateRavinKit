@@ -10,12 +10,16 @@ import Foundation
 public extension String {
 
     func dateFormat(
-        to format: DateFormat
+
+        to format: String
+
     ) -> String? {
 
-        DateRavinKit.convert(
+       try? DateRavinKit.convert(
             self,
             to: format
         )
+
     }
+
 }

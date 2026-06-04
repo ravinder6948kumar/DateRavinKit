@@ -5,15 +5,13 @@
 //  Created by Ravinder Kumar on 04/06/26.
 //
 
-public enum DateRavinKitError: Error, LocalizedError {
+import Foundation
 
-    
+public enum DateRavinKitError: Error, LocalizedError {
 
     case invalidInputDate
 
     case invalidOutputFormat
-
-    
 
     public var errorDescription: String? {
 
