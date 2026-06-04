@@ -27,19 +27,26 @@ DateRavinKit eliminates repetitive DateFormatter code by automatically detecting
 
 ### Swift Package Manager (Xcode)
 
-1. In Xcode, open your app project.
+1. Open your app project in Xcode.
 2. Go to **File → Add Package Dependencies…**
-3. Enter the repository URL:
-   `https://github.com/ravinder6948kumar/DateRavinKit.git`
-4. Add the **DateRavinKit** library product to your app target.
+3. Paste this URL:
+   ```
+   https://github.com/ravinder6948kumar/DateRavinKit.git
+   ```
+4. Set **Dependency Rule** to **Branch → `main`**  
+   (Use this until you publish a release tag like `1.0.0`.)
+5. Click **Add Package**.
+6. On the next screen, check **DateRavinKit** and add it to your **app target** (not only the project).
 
 ### Swift Package Manager (Package.swift)
+
+**Option A — branch (no release tag yet):**
 
 ```swift
 dependencies: [
     .package(
         url: "https://github.com/ravinder6948kumar/DateRavinKit.git",
-        from: "1.0.0"
+        branch: "main"
     )
 ],
 targets: [
@@ -50,6 +57,17 @@ targets: [
         ]
     )
 ]
+```
+
+**Option B — version (after you tag a release on GitHub):**
+
+```swift
+dependencies: [
+    .package(
+        url: "https://github.com/ravinder6948kumar/DateRavinKit.git",
+        from: "1.0.0"
+    )
+],
 ```
 
 ## Usage
