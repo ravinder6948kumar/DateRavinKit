@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.dia"
+  }
+}

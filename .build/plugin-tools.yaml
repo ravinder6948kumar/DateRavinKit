@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "DateRavinKit-arm64-apple-macosx-debug.module": ["<DateRavinKit-arm64-apple-macosx-debug.module>"]
+  "DateRavinKitPackageTests-arm64-apple-macosx-debug.module": ["<DateRavinKitPackageTests-arm64-apple-macosx-debug.module>"]
+  "DateRavinKitPackageTests-arm64-apple-macosx-debug.test": ["<DateRavinKitPackageTests-arm64-apple-macosx-debug.test>"]
+  "DateRavinKitTests-arm64-apple-macosx-debug.module": ["<DateRavinKitTests-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<DateRavinKit-arm64-apple-macosx-debug.module>"]
+  "test": ["<DateRavinKit-arm64-apple-macosx-debug.module>","<DateRavinKitPackageTests-arm64-apple-macosx-debug.test>","<DateRavinKitTests-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Tests/DateRavinKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateFormat.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateParser.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateRavinKit.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/Extensions.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/FormatterFactory.swift"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/sources"]
+    description: "Write auxiliary file /Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/sources"
+
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/sources"
+
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.derived/runner.swift"]
+
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/DateFormatTests.swift.o"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Tests/DateRavinKitTests/DateFormatTests.swift"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/sources"]
+    description: "Write auxiliary file /Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/sources"
+
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<DateRavinKit-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKit.swiftmodule"]
+    outputs: ["<DateRavinKit-arm64-apple-macosx-debug.module>"]
+
+  "<DateRavinKitPackageTests-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitPackageTests.swiftmodule"]
+    outputs: ["<DateRavinKitPackageTests-arm64-apple-macosx-debug.module>"]
+
+  "<DateRavinKitPackageTests-arm64-apple-macosx-debug.test>":
+    tool: phony
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.xctest/Contents/MacOS/DateRavinKitPackageTests"]
+    outputs: ["<DateRavinKitPackageTests-arm64-apple-macosx-debug.test>"]
+
+  "<DateRavinKitTests-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/DateFormatTests.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitTests.swiftmodule"]
+    outputs: ["<DateRavinKitTests-arm64-apple-macosx-debug.module>"]
+
+  "C.DateRavinKit-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateFormat.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateParser.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateRavinKit.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/Extensions.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/FormatterFactory.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/sources"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKit.swiftmodule"]
+    description: "Compiling Swift Module 'DateRavinKit' (5 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DateRavinKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKit.swiftmodule","-output-file-map","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/sources","-I","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/include/DateRavinKit-Swift.h","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dateravinkit"]
+
+  "C.DateRavinKitPackageTests-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.derived/runner.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitTests.swiftmodule","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/sources"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'DateRavinKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DateRavinKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitPackageTests.swiftmodule","-output-file-map","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/sources","-I","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/include/DateRavinKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dateravinkit"]
+
+  "C.DateRavinKitPackageTests-arm64-apple-macosx-debug.test":
+    tool: shell
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.build/runner.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/DateFormatTests.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.xctest/Contents/MacOS/DateRavinKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.xctest/Contents/MacOS/DateRavinKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug","-o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.xctest/Contents/MacOS/DateRavinKitPackageTests","-module-name","DateRavinKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.DateRavinKitTests-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Tests/DateRavinKitTests/DateFormatTests.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKit.swiftmodule","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/sources"]
+    outputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/DateFormatTests.swift.o","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'DateRavinKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DateRavinKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules/DateRavinKitTests.swiftmodule","-output-file-map","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKitTests.build/sources","-I","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dateravinkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Tests/DateRavinKitTests/","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Package.swift","/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

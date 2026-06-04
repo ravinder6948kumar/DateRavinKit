@@ -1,8 +1,8 @@
-# DateKit
+# DateRavinKit
 
 A lightweight and powerful Swift Package for automatic date format detection, parsing, and conversion.
 
-DateKit eliminates repetitive DateFormatter code by automatically detecting input date formats and converting them into any desired output format with a simple API.
+DateRavinKit eliminates repetitive DateFormatter code by automatically detecting input date formats and converting them into any desired output format with a simple API.
 
 ## Features
 
@@ -25,13 +25,29 @@ DateKit eliminates repetitive DateFormatter code by automatically detecting inpu
 
 ## Installation
 
-### Swift Package Manager
+### Swift Package Manager (Xcode)
+
+1. In Xcode, open your app project.
+2. Go to **File → Add Package Dependencies…**
+3. Enter the repository URL:
+   `https://github.com/ravinder6948kumar/DateRavinKit.git`
+4. Add the **DateRavinKit** library product to your app target.
+
+### Swift Package Manager (Package.swift)
 
 ```swift
 dependencies: [
     .package(
-        url: "https://github.com/yourusername/DateKit.git",
+        url: "https://github.com/ravinder6948kumar/DateRavinKit.git",
         from: "1.0.0"
+    )
+],
+targets: [
+    .target(
+        name: "YourApp",
+        dependencies: [
+            .product(name: "DateRavinKit", package: "DateRavinKit")
+        ]
     )
 ]
 ```
@@ -39,7 +55,9 @@ dependencies: [
 ## Usage
 
 ```swift
-let result = DateKit.convert(
+import DateRavinKit
+
+let result = DateRavinKit.convert(
     "2026-06-04",
     to: .display
 )

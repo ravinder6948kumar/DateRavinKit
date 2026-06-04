@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/primary.swiftdeps"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateFormat.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateFormat.dia"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateParser.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateParser.dia"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/DateRavinKit.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/DateRavinKit.dia"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/Extensions.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/Extensions.dia"
+  },
+  "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/Sources/DateRavinKit/FormatterFactory.swift": {
+    "dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.d",
+    "object": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swift.o",
+    "swiftmodule": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.swiftdeps",
+    "diagnostics": "/Users/ravinderkumar/Desktop/DateRavinKit/DateRavinKit/.build/arm64-apple-macosx/debug/DateRavinKit.build/FormatterFactory.dia"
+  }
+}

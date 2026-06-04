@@ -1,28 +1,29 @@
-// swift-tools-version: 6.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 6.0
 
 import PackageDescription
 
 let package = Package(
     name: "DateRavinKit",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v10_15),
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DateRavinKit",
             targets: ["DateRavinKit"]
         ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DateRavinKit"
+            name: "DateRavinKit",
+            path: "Sources/DateRavinKit"
         ),
         .testTarget(
             name: "DateRavinKitTests",
-            dependencies: ["DateRavinKit"]
+            dependencies: ["DateRavinKit"],
+            path: "Tests/DateRavinKitTests"
         ),
-
     ],
     swiftLanguageModes: [.v6]
 )

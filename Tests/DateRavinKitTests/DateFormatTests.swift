@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import DateRavinKit
+import DateRavinKit
 
 @Suite("DateFormat")
 struct DateFormatTests {

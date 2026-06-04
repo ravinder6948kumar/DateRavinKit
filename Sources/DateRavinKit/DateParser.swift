@@ -8,9 +8,9 @@
 
 import Foundation
 
-final class DateParser {
+public final class DateParser {
 
-    static func parse(
+    public static func parse(
         _ dateString: String
     ) -> Date? {
 
